@@ -71,6 +71,7 @@ public class HTTPInteraction {
 			is.close();
 			jsonString = sb.toString();
 			jArray = new JSONArray(jsonString);
+			System.out.println(jArray);
 		} catch (Exception e) {
 			Log.e("log_tag",
 					"Error in http connection and jsonh" + e.toString());

@@ -15,7 +15,7 @@ public class SecondScreen extends Activity {
 	        setContentView(R.layout.add_activity_screen);
 	 
 	        TextView txtName = (TextView) findViewById(R.id.txtName);
-	        TextView txtEmail = (TextView) findViewById(R.id.txtEmail);
+	      //  TextView txtEmail = (TextView) findViewById(R.id.txtEmail);
 	        Button btnClose = (Button) findViewById(R.id.btnClose);
 	 
 	        Intent i = getIntent();
@@ -26,14 +26,23 @@ public class SecondScreen extends Activity {
 	 
 	        // Displaying Received data
 	        txtName.setText(name);
-	        txtEmail.setText(email);
+	    //    txtEmail.setText(email);
 	 
 	        // Binding Click event to Button
 	        btnClose.setOnClickListener(new View.OnClickListener() {
 	 
 	            public void onClick(View arg0) {
-	                //Closing SecondScreen Activity
-	                finish();
+	            	//Starting a new Intent
+	                Intent nextScreen = new Intent(getApplicationContext(), MainListActivity.class);
+
+	                //Sending data to another Activity
+	                //nextScreen.putExtra("name", inputName.getText().toString());
+	                //nextScreen.putExtra("email", inputPassword.getText().toString());
+	              //  Log.e("n", inputName.getText()+"."+ inputPassword.getText());
+
+	                startActivity(nextScreen);
+	               
+	               // finish();
 	            }
 	        });
 	 

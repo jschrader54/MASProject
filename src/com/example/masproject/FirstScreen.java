@@ -2,8 +2,6 @@ package com.example.masproject;
 
 import java.util.Locale;
 
-
-
 import com.example.masproject.R;
 import android.os.Bundle;
 import android.app.Activity;
@@ -34,10 +32,13 @@ public class FirstScreen extends Activity {
  //       inputPassword = (TextView) findViewById(R.id.);
         
         b1 = (Button) findViewById(R.id.button1);
-       b2 = (Button) findViewById(R.id.button2);
+        b2 = (Button) findViewById(R.id.button2);
         
         b1.setOnClickListener(myhandler1);
         b2.setOnClickListener(myhandler2);
+        HTTPInteraction httpobj= new HTTPInteraction();
+        httpobj.httpRequest("http://scdeducationtest.x10.mx/defaultjson.txt", null);
+        httpobj.parseHttpResponse();
 
     }
 

@@ -5,19 +5,20 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <TextView android:layout_width="fill_parent"
+   <!--  <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Username: "/>
+            android:text="Username: "/>- -->
     
-    <EditText android:id="@+id/name"
+    <EditText 
+        android:id="@+id/name"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dip"/>
-    <TextView
+ <!--     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Password:  " />
-
+-->
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"

@@ -1,19 +1,11 @@
 package com.example.masproject;
 
-import java.util.Locale;
-
-import com.example.masproject.R;
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-
-import com.example.masproject.HTTPInteraction;
 
 public class FirstScreen extends Activity {
 

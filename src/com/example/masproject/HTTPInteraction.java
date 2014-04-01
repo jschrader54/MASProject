@@ -14,8 +14,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.os.StrictMode;
 import android.util.Log;
 

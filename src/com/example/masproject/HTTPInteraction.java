@@ -23,7 +23,6 @@ public class HTTPInteraction {
 
 	public HTTPInteraction() {
 		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
-				.detectNetwork() // or .detectAll() for all detectable problems
 				.penaltyDialog() // show a dialog
 				.permitNetwork() // permit Network access
 				.build());
